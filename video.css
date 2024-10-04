@@ -1,0 +1,109 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #6a5acd, #4b0082); /* Rich blue-purple gradient */
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column; /* Stack header, content, and footer */
+    height: 100vh; /* Full height to fit screen */
+    overflow: hidden; /* Ensure no scrolling */
+}
+.back-button {
+    position: absolute; /* Fix the button position on the screen */
+    top: 20px;
+    left: 20px;
+    z-index: 10; /* Ensure it's above all other content */
+}
+
+.back-arrow {
+    display: inline-block;
+    padding: 10px 15px;
+    background: linear-gradient(45deg, #FF6F20, #FFB91C); /* Gradient background matching the theme */
+    color: #FFF;
+    border-radius: 25px; /* Rounded button */
+    text-decoration: none;
+    font-size: 1.2rem; /* Slightly larger font */
+    transition: background 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.back-arrow:hover {
+    background: linear-gradient(45deg, #FFB91C, #FF6F20); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slight grow effect on hover */
+}
+
+
+/* Header Styling */
+.header {
+    text-align: center;
+    padding: 30px 20px;
+    background: rgba(0, 0, 0, 0.6); /* Transparent background */
+    border-bottom: 2px solid #FF6F20; /* Accent line at the bottom of the header */
+}
+
+.header h1 {
+    font-size: 2.5rem; /* Larger font size */
+    margin: 0;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #E0E0E0;
+}
+
+/* Semester Menu Styling */
+.semester-menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10px;
+    flex-grow: 1; /* Allow content to take up full space */
+    align-items: center; /* Vertically center the content */
+}
+
+.semester {
+    text-align: center;
+    width: 45%; /* Make semester sections responsive */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+.semester h2 {
+    font-size: 2rem;
+    color: #FFB91C; /* Accent color for semester titles */
+    margin-bottom: 20px;
+}
+
+.subjects-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column */
+    gap: 10px; /* Space between buttons */
+}
+
+/* Subject Buttons */
+.subject-button {
+    padding: 10px 15px;
+    background: linear-gradient(45deg, #FF6F20, #FFB91C); /* Gradient background */
+    color: #FFF;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.subject-button:hover {
+    background: linear-gradient(45deg, #FFB91C, #FF6F20); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slight enlarge effect on hover */
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    padding: 10px; /* Reduced footer padding */
+    background: rgba(0, 0, 0, 0.7); /* Darker footer background */
+    font-size: 1rem; /* Slightly larger footer text */
+}

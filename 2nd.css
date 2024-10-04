@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #6a5acd, #4b0082); /* Rich blue-purple gradient */
+    color: #FFFFFF; /* White text for contrast */
+    height: 100vh; /* Full height */
+    display: flex;
+    flex-direction: column; /* Allow stacking of header, content, and footer */
+}
+.back-button {
+    position: absolute; /* Fix the button position on the screen */
+    top: 20px;
+    left: 20px;
+    z-index: 10; /* Ensure it's above all other content */
+}
+
+.back-arrow {
+    display: inline-block;
+    padding: 10px 15px;
+    background: linear-gradient(45deg, #FF6F20, #FFB91C); /* Gradient background matching the theme */
+    color: #FFF;
+    border-radius: 25px; /* Rounded button */
+    text-decoration: none;
+    font-size: 1.2rem; /* Slightly larger font */
+    transition: background 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.back-arrow:hover {
+    background: linear-gradient(45deg, #FFB91C, #FF6F20); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slight grow effect on hover */
+}
+
+
+.header {
+    text-align: center;
+    padding: 20px; /* Reduced padding for more space */
+    background: rgba(0, 0, 0, 0.5); /* Slightly transparent background for header */
+    border-bottom: 2px solid #FF6F20; /* Accent line */
+    flex: 0 0 120px; /* Fixed height for the header */
+}
+
+.header h1 {
+    font-size: 3rem; /* Increased header font size */
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
+}
+
+.header p {
+    font-size: 1.2rem; /* Increased subheader font size */
+    margin-top: 5px;
+    color: #E0E0E0; /* Slightly lighter for contrast */
+}
+
+.content-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for boxes */
+    gap: 15px; /* Space between boxes */
+    padding: 20px; /* Padding for section */
+    flex-grow: 1; /* Allow content section to expand */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.content-item {
+    background: rgba(255, 255, 255, 0.15); /* Semi-transparent white for contrast */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Adjusted padding */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.content-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.content-item h2 {
+    font-size: 2rem; /* Increased heading size */
+    margin-bottom: 10px;
+    color: #FFB91C; /* Accent color for headings */
+}
+
+.content-item p {
+    font-size: 1.2rem; /* Increased paragraph size */
+    margin-bottom: 15px; /* Added space between text and button */
+    color: #FFFFFF; /* White text for better readability */
+}
+
+.button {
+    padding: 10px 15px; /* Button padding */
+    background: linear-gradient(45deg, #FF6F20, #FFB91C); /* Gradient for button */
+    color: #FFF;
+    border-radius: 8px; /* Rounded corners */
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background: linear-gradient(45deg, #FFB91C, #FF6F20); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.footer {
+    text-align: center;
+    padding: 5px; /* Reduced footer padding */
+    background: rgba(0, 0, 0, 0.5); /* Slightly transparent background for footer */
+    flex: 0 0 40px; /* Fixed height for the footer */
+    position: relative;
+}

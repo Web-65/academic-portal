@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #6a5acd, #4b0082); /* Rich blue-purple gradient */
+    color: #FFFFFF; /* White text for contrast */
+    display: flex;
+    flex-direction: column; /* Stack header, content, and footer */
+    height: 100vh; /* Full height */
+}
+
+.back-button {
+    position: absolute; /* Position the button at the top */
+    top: 20px; /* Align to the top */
+    left: 20px; /* Align to the left */
+    z-index: 10; /* Ensure it's above other elements */
+}
+
+.back-arrow {
+    display: inline-block; /* Ensure padding works */
+    padding: 10px 15px; /* Add padding for a better click area */
+    background: linear-gradient(45deg, #FF6F20, #FFB91C); /* Gradient background */
+    color: #FFF; /* White text for contrast */
+    border-radius: 25px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2rem; /* Larger font size */
+    transition: background 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.back-arrow:hover {
+    background: linear-gradient(45deg, #FFB91C, #FF6F20); /* Hover gradient */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.subject-header {
+    text-align: center;
+    padding: 20px; /* Adjusted padding */
+    background: rgba(0, 0, 0, 0.7); /* Darker background for header */
+}
+
+.subject-header h1 {
+    font-size: 2.5rem; /* Adjusted font size */
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.subject-header p {
+    font-size: 1.2rem; /* Adjusted font size */
+    margin-top: 10px;
+    color: #E0E0E0;
+}
+
+.chapter-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+    gap: 20px; /* Space between the boxes */
+    padding: 40px; /* Padding around the chapter list */
+    flex-grow: 1; /* Allow section to expand */
+    align-items: center; /* Center items vertically */
+    justify-items: center; /* Center items horizontally */
+    height: calc(100vh - 180px); /* Adjusted height to fit within screen */
+}
+
+.chapter-item {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    padding: 15px; /* Reduced padding inside the boxes */
+    text-align: center;
+    width: 85%; /* Adjusted width for better spacing */
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    height: 120px; /* Reduced height for better appearance */
+    display: flex; /* Flexbox for centering */
+    flex-direction: column; /* Stack content */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+.chapter-item a {
+    color: #FFB91C; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.5rem; /* Larger font size for links */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.chapter-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.25); /* Slightly change background on hover */
+}
+
+.chapter-item:hover a {
+    color: #FFFFFF; /* Change link color on hover */
+}
+
+.footer {
+    text-align: center;
+    padding: 10px; /* Reduced footer padding */
+    background: rgba(0, 0, 0, 0.7); /* Darker footer background */
+}

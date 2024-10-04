@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* Updated to use the same font */
+    background: linear-gradient(180deg, #6a5acd, #4b0082); /* Rich blue-purple gradient */
+    color: #FFFFFF; /* White text for contrast */
+    height: 100vh; /* Full height */
+    display: flex;
+    flex-direction: column; /* Allow stacking of header, content, and footer */
+    align-items: center; /* Center align items */
+    justify-content: center; /* Center vertically */
+    padding: 20px; /* Add some padding */
+    position: relative; /* For absolute positioning of background elements */
+}
+
+/* Back button styling */
+.back-arrow {
+    position: absolute; /* Fix the button position on the screen */
+    top: 20px;
+    left: 20px;
+    z-index: 10; /* Ensure it's above all other content */
+    padding: 10px 15px;
+    background: linear-gradient(45deg, #FF6F20, #FFB91C); /* Gradient background matching the theme */
+    color: #FFF;
+    border-radius: 25px; /* Rounded button */
+    text-decoration: none;
+    font-size: 1.2rem; /* Slightly larger font */
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow */
+}
+
+.back-arrow:hover {
+    background: linear-gradient(45deg, #FFB91C, #FF6F20); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slight grow effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Shadow increase on hover */
+}
+
+/* Container styling */
+.container {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    padding: 30px; /* Padding for container */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Box shadow for depth */
+    text-align: center; /* Centered text */
+}
+
+/* Heading styling */
+h2 {
+    font-size: 2.5rem; /* Increased heading size */
+    margin-bottom: 15px; /* Space below heading */
+    color: #FFB91C; /* Accent color */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Shadow for depth */
+}
+
+/* Paragraph and list styling */
+p, li {
+    font-size: 1.2rem; /* Increased font size */
+    margin: 10px 0; /* Space around paragraphs */
+}
+
+.contact-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+/* Link styling */
+a {
+    color: #FFB91C; /* Accent color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 36px; /* Smaller header size on smaller screens */
+    }
+
+    p, li {
+        font-size: 18px; /* Smaller font size for paragraphs and list items */
+    }
+
+    .container {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+}
